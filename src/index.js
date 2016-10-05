@@ -1,9 +1,15 @@
-/* @flow */
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Main from './components/main.jsx';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MyAwesomeReactComponent from './MyAwesomeReactComponent';
+
+const App = () => (
+    <MuiThemeProvider>
+        <MyAwesomeReactComponent />
+    </MuiThemeProvider>
+);
 
 ReactDOM.render(
-  <Main message='and GoodBye World' date={new Date()} />,
-  document.getElementById('app')
+    <App />,
+    document.getElementById('app')
 );
