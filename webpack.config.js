@@ -26,7 +26,7 @@ module.exports = [{
         style: './src/jquery.bracket.scss'
     },
     output: {
-        path: path.resolve('css/'),
+        path: path.resolve('dist/'),
         filename: 'style.css'
     },
     module: {
